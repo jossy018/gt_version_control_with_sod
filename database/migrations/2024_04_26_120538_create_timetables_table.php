@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('timetables', function (Blueprint $table) {
             $table->id();
+            
             $table->unsignedBigInteger('course_id');
             $table->unsignedBigInteger('period_id');
             $table->unsignedBigInteger('user_id');
